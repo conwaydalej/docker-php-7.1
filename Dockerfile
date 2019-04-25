@@ -40,6 +40,7 @@ RUN pecl install xdebug-2.5.5 \
 # Enable apache modules
 RUN a2enmod rewrite headers ssl
 
+# Set default ini file
 RUN cp "$PHP_INI_DIR/php.ini-development" "$PHP_INI_DIR/php.ini"
 
 
